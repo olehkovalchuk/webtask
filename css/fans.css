@@ -1,0 +1,14 @@
+.message{
+    border-bottom: 1px solid #737373;
+    margin: 50px 0;
+}
+.date span{
+    font-size: .9rem;
+}
+.form-input.error{
+    border: 1px solid red;
+}
+.error-message{
+    display: none;
+    color: red;
+}

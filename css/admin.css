@@ -1,0 +1,23 @@
+.upload-news-form {
+    width: 50%;
+    margin: 50px 0;
+}
+.upload-news-form > *{
+    margin-bottom: 10px;
+}
+.preview-img{
+    width: 100px;
+    height: 100px;
+}
+.validation-field.error{
+    border: 1px solid red;
+}
+.upload-news-form h3{
+    display: none;
+    color:green
+}
+@media (max-width:992px){
+    .upload-news-form {
+        width: 100%;
+    }
+}

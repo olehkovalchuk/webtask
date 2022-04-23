@@ -2,82 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <title>Андрій Шевченко - футболіст - Андрій Шевченко</title>
+    <title>Головна</title>
 </head>
 <body>
-    <header>
-        <div class="header_menu">
-            <a class="logo_link logo_animation" href="index.html"></a>
-            <nav class="nav_bar">
-                <ul>
-                    <li class="nav_item"><a href="index.html">Головна</a></li>
-                    <li class="nav_item"><a href="biography.html">Біографія</a></li>
-                    <li class="nav_item drop_down">
-                        <a href="#">Досягнення</a>
-                        <ul class="drop_down_menu">
-                            <li class="drop_down_item"><a href="#">Динамо</a></li>
-                            <li class="drop_down_item"><a href="#">Національна збірна</a></li>
-                            <li class="drop_down_item"><a href="#">Мілан</a></li>
-                            <li class="drop_down_item"><a href="#">Челсі</a></li>
+    <div class="wrapper">
+        <header class="sticky-top">
+            <div class="container">
+                <div class="d-flex justify-content-between align-items-center py-4">
+                    <a href="index.html" class="d-flex logo_animation">
+                        <img class="header-logo" src="img/logo-ua.png" alt="logo">
+                    </a>
+                    <nav>
+                        <div class="burger-menu">
+                            <img class="hide" src="img/burger.svg" alt="">
+                        
+                        <ul class="nav">
+                            <a href="index.html" class="logo_animation logo-nav">
+                                <img class="header-logo" src="img/logo-ua.png" alt="logo">
+                            </a>
+                            <li class="nav_item"><a href="index.html" class="nav-link active">Головна</a></li>
+                            <li class="nav_item"><a href="news.html" class="nav-link">Новини</a></li>                            <li class="nav_item dropdown">
+                                <a href="matches.html" class="nav-link dropdown-toggle">Досягнення</a>
+                                <ul class="dropdown-menu">
+                                    <a href="index.html" class="logo_animation logo-drop">
+                                        <img class="header-logo" src="img/logo-ua.png" alt="logo">
+                                    </a>
+                                    <li class=""><a href="#" class="dropdown-item">Динамо</a></li>
+                                    <li class=""><a href="#" class="dropdown-item">Національна <span>збірна</span></a></li>
+                                    <li class=""><a href="#" class="dropdown-item">Мілан</a></li>
+                                    <li class=""><a href="#" class="dropdown-item">Челсі</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item"><a href="fans.html" class="nav-link">Fans</a></li>
+                            <li class="nav_item"><a href="admin.html" class="nav-link">Admin</a></li>
                         </ul>
-                    </li>
-                    <li class="nav_item"><a href="#">Новини</a></li>
-                    <li class="nav_item"><a href="#">Статті</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="header_baner">
-            <img class="header_baner_img header_baner_img_animation" src="img/ball.png" alt="ball">
-            <h1>Андрій Шевченко - футболіст</h1>
-        </div>
-    </header>
-    
-    <main class="main_container">
-        <div class="about">
-            <div class="about_container">
-                <div class="about_img">
-                    <img src="img/a-shevchenko-2.jpg" alt="Андрій Шевченко - футболіст">
-                </div>
-                <div class="about_content ">
-                    <h2>Футболіст <span>Андрій Шевченко</span></h2>
-                    <p>Андрій Миколайович Шевченко — український футболіст, нападник київського «Динамо», капітан збірної України. У 1999 році Андрій визнається кращим футболістом чемпіонату України і кращим нападаючим Ліги Чемпіонів.</p>
-                    <p>«Тоді мене переповнювало відчуття, того, що ти — губка, , яка намагається увібрати все цікаве, що тебе оточує. Величезне бажання пізнати світ і показати себе, — згадує Андрій. — Не можу сказати, що ця свіжість сприйняття життя у мене зникла, але з роками, звичайно, стаєш більш консервативним. Але все ж хочеться кожен раз відкривати в собі щось нове і підкорювати і домагатися в житті максимуму».</p>
-                    <p>Володар «Золотого м'яча» 2004 року. Тричі ставав кращим бомбардиром Ліги чемпіонів, двічі — чемпіонату Італії. Другий бомбардир в історії «Мілана». Шість разів визнавався кращим футболістом України.</p>
-                    <a class="button" href="ua/biography.html">Біографія</a>
-                    <a class="button" href="ua/dosagnennya.html">Досягнення</a>
+                    </div>
+                    </nav>
                 </div>
             </div>
-            <div class="about_content about_footer">
-                <p>«Чого хочу досягти в кар'єрі футболіста? Грати в футбол і відчувати, що мені цікаво, боротися і перемагати в кожному матчі. І ще раз добитися максимального результату зі збірною України на майбутньому чемпіонаті Європи з футболу в 2012 році» — каже Андрій про свою кар'єру.</p>
-                <p>Останні десять років Андрій Шевченко, крім спорту, активно займається благодійністю. «Благодійний фонд Андрія Шевченка», який працює з травня 2005, організував кілька матчів за участю українських та європейських зірок спорту і шоу-бізнесу: «Від серця до серця» в Мілані, «Подаруємо наші серця дітям» в Києві. Зібрані кошти були спрямовані на реалізацію проекту «Дитяча лікарня майбутнього», організованого фондом «Україна 3000», і на благодійні проекти фонду футболіста, який протягом останніх шести років надає підтримку двом дитячим будинкам в Переяслав-Хмельницькому і в селищі Володарка Київської області.</p>
+        </header>
+        <div class="header-baner">
+            <div class="container position-relative">
+                <img class="ball ball_animation position-absolute bottom-0" src="img/ball.png" alt="ball">
+                <h1>Андрій Шевченко - футболіст</h1>
             </div>
         </div>
-        <div class="blog">
-            <div class="blog_item">
-                <img src="img/igrovye-avtomaty-370x230-a67.jpg" alt="Baner">
-                <h3 class="title"><a class="link_animation" href="#">Ігрові автомати онлайн від казино Вулкан</a></h3>
+        <main>
+            <div class="container main">
+                <div class="about">
+                    <div class="about_img">
+                        <img class="img-fluid" src="img/a-shevchenko-2.jpg" alt="Андрій Шевченко - футболіст">
+                    </div>
+                    <div class="about_content">
+                        <h2>Футболіст <span>Андрій Шевченко</span></h2>
+                        <p>Андрій Миколайович Шевченко — український футболіст, нападник київського «Динамо», капітан збірної України. У 1999 році Андрій визнається кращим футболістом чемпіонату України і кращим нападаючим Ліги Чемпіонів.</p>
+                        <p>«Тоді мене переповнювало відчуття, того, що ти — губка, , яка намагається увібрати все цікаве, що тебе оточує. Величезне бажання пізнати світ і показати себе, — згадує Андрій. — Не можу сказати, що ця свіжість сприйняття життя у мене зникла, але з роками, звичайно, стаєш більш консервативним. Але все ж хочеться кожен раз відкривати в собі щось нове і підкорювати і домагатися в житті максимуму».</p>
+                        <p>Володар «Золотого м'яча» 2004 року. Тричі ставав кращим бомбардиром Ліги чемпіонів, двічі — чемпіонату Італії. Другий бомбардир в історії «Мілана». Шість разів визнавався кращим футболістом України.</p>
+                        <a class="btn btn-secondary" href="ua/biography.html">Біографія</a>
+                        <a class="btn btn-secondary" href="ua/dosagnennya.html">Досягнення</a>
+                    </div>       
+                </div>
+                <div class="about_content pt-5">
+                    <p>«Чого хочу досягти в кар'єрі футболіста? Грати в футбол і відчувати, що мені цікаво, боротися і перемагати в кожному матчі. І ще раз добитися максимального результату зі збірною України на майбутньому чемпіонаті Європи з футболу в 2012 році» — каже Андрій про свою кар'єру.</p>
+                    <p>Останні десять років Андрій Шевченко, крім спорту, активно займається благодійністю. «Благодійний фонд Андрія Шевченка», який працює з травня 2005, організував кілька матчів за участю українських та європейських зірок спорту і шоу-бізнесу: «Від серця до серця» в Мілані, «Подаруємо наші серця дітям» в Києві. Зібрані кошти були спрямовані на реалізацію проекту «Дитяча лікарня майбутнього», організованого фондом «Україна 3000», і на благодійні проекти фонду футболіста, який протягом останніх шести років надає підтримку двом дитячим будинкам в Переяслав-Хмельницькому і в селищі Володарка Київської області.</p>
+                </div>
+                <div class="blog flex-wrap justify-content-between">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid" src="img/igrovye-avtomaty-370x230-a67.jpg" alt="Baner">
+                        <a class="blog-link mt-4" href="#">Ігрові автомати онлайн від казино Вулкан</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid" src="img/red-card-370x230-7e3.jpg" alt="Baner">
+                        <a class="blog-link mt-4" href="#">Червона картка у футболі</a>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid" src="img/shevchenko-7-1-370x230-fe2.jpg" alt="Baner">
+                        <!-- <a class="blog-link mt-4" href="#">10 історій з книги Андрія Шевченка</a> -->
+                        <a class="blog-link mt-4" href="#">10 історій з книги Андрія Шевченка</a>
+                    </div>
+                </div>
             </div>
-            <div class="blog_item">
-                <img src="img/red-card-370x230-7e3.jpg" alt="Baner">
-                <h3 class="title"><a class="link_animation" href=#">Червона картка у футболі</a></h3>
+        </main>
+        <footer class="mt-5">
+            <div class="full-width py-4">
+                <div class="container d-flex align-items-center">
+                    <h4>Останні новини :</h4>
+                    <a href="#">Віталій Кличко засмутився від'їздом свого друга Андрія Шевченка до Генуї</a>    
+                </div>
             </div>
-            <div class="blog_item">
-                <img src="img/shevchenko-7-1-370x230-fe2.jpg" alt="Baner">
-                <h3 class="title"><a class="link_animation" href="#">10 історій з книги Андрія Шевченка</a></h3>
+            <div class="full-width py-2">
+                <div class="container d-flex justify-content-between">
+                    <p>&copy; 2014 — 2022 Андрій Шевченко - фан-сайт футболіста</p>
+                    <p>При вокористанні будь-яких матеріалів посилання на ashevchenko.kiev.ua обов'язкове</p>    
+                </div>
             </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer_news">
-            <h4>Останні новини :</h4>
-            <a href="#">Віталій Кличко засмутився від'їздом свого друга Андрія Шевченка до Генуї</a>
-        </div>
-        <div class="footer">
-            <p>&copy; 2014 — 2022 Андрій Шевченко - фан-сайт футболіста</p>
-            <p>При вокористанні будь-яких матеріалів посилання на ashevchenko.kiev.ua обов'язкове</p>
-        </div> 
-    </footer>
+        </footer>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
